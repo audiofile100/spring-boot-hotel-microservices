@@ -1,0 +1,296 @@
+[
+  {
+    "hotelId" : "1",
+    "hotelName" : "Four Seasons Resort",
+    "address" : "1 Manele Bay Rd, Lanai City, HI 96763",
+    "city" : "Lanai City",
+    "state" : "Hawaii",
+    "starRating" : "5",
+    "averagePrice" : "1100.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "3",
+        "name" : "breakfast"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "2",
+    "hotelName" : "The Langham",
+    "address" : "330 N Wabash Ave, Chicago, IL 60611",
+    "city" : "Chicago",
+    "state" : "Illinois",
+    "starRating" : "4",
+    "averagePrice" : "315.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "3",
+    "hotelName" : "Holiday Inn",
+    "address" : "1500 Van Ness Ave, San Francisco, CA 94109",
+    "city" : "San Francisco",
+    "state" : "California",
+    "starRating" : "3",
+    "averagePrice" : "122.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "2",
+        "name" : "check-in & check-out times"
+      },
+      {
+        "a_id" : "3",
+        "name" : "breakfast"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "5",
+    "hotelName" : "DoubleTree",
+    "address" : "1985 E Grand Ave, El Segundo, CA 90245",
+    "city" : "Los Angeles - LA",
+    "state" : "California",
+    "starRating" : "5",
+    "averagePrice" : "145.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "5",
+    "hotelName" : "Marriot",
+    "address" : "221 N Rampart Blvd, Las Vegas, NV 89145",
+    "city" : "Las Vegas",
+    "state" : "Nevada",
+    "starRating" : "4",
+    "averagePrice" : "127.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "6",
+    "hotelName" : "Plaza Hotel",
+    "address" : "1 N Main St, Las Vegas, NV 89101",
+    "city" : "Las Vegas",
+    "state" : "Nevada",
+    "starRating" : "3",
+    "averagePrice" : "78.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "7",
+    "hotelName" : "Holiday Inn",
+    "address" : "585 8th Ave, New York, NY 10018",
+    "city" : "New York",
+    "state" : "New York",
+    "starRating" : "3",
+    "averagePrice" : "80.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "8",
+    "hotelName" : "DoubleTree",
+    "address" : "350 W 40th St, New York, NY 10018",
+    "city" : "New York",
+    "state" : "New York",
+    "starRating" : "4",
+    "averagePrice" : "99.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "9",
+    "hotelName" : "Best Western",
+    "address" : "1100 S Michigan Ave, Chicago, IL 60605",
+    "city" : "Chicago",
+    "state" : "Illinois",
+    "starRating" : "2",
+    "averagePrice" : "67.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "2",
+        "name" : "check-in & check-out times"
+      },
+      {
+        "a_id" : "3",
+        "name" : "breakfast"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  },
+  {
+    "hotelId" : "10",
+    "hotelName" : "Hyatt Place",
+    "address" : "28 N Franklin St, Chicago, IL 60606",
+    "city" : "Chicago",
+    "state" : "Illinois",
+    "starRating" : "3",
+    "averagePrice" : "91.0",
+    "amenities" : [
+      {
+        "a_id" : "1",
+        "name" : "parking"
+      },
+      {
+        "a_id" : "2",
+        "name" : "check-in & check-out times"
+      },
+      {
+        "a_id" : "3",
+        "name" : "breakfast"
+      },
+      {
+        "a_id" : "4",
+        "name" : "bar/lounge"
+      },
+      {
+        "a_id" : "5",
+        "name" : "fitness center"
+      }
+    ],
+    "discount" : "0.10",
+    "description" : "",
+    "email" : "",
+    "mobile" : "123456789",
+    "imageURL" : "",
+    "timesBooked" : "5"
+  }
+]

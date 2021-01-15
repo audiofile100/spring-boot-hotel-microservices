@@ -1,0 +1,22 @@
+[
+  {
+    "a_id" : "1",
+    "name" : "parking"
+  },
+  {
+    "a_id" : "2",
+    "name" : "check-in & check-out times"
+  },
+  {
+    "a_id" : "3",
+    "name" : "breakfast"
+  },
+  {
+    "a_id" : "4",
+    "name" : "bar/lounge"
+  },
+  {
+    "a_id" : "5",
+    "name" : "fitness center"
+  }
+]
