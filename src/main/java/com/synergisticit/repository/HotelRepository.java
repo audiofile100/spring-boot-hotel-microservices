@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface HotelRepository extends JpaRepository<Hotel, Integer> {
 
-    List<Hotel> findAllByHotelNameContainsOrCityContainsOrCityContainsOrAddressContains(String hotelName,
+    List<Hotel> findAllByHotelNameContainsOrCityContainsOrStateContainsOrAddressContains(String hotelName,
                                                                                         String city,
-                                                                                        String city2,
+                                                                                        String state,
                                                                                         String address);
 }

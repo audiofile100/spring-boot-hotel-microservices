@@ -39,8 +39,8 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        loadData("classpath:static/json/hotels.json", "hotel");
         loadData("classpath:static/json/amenities.json", "amenities");
+        loadData("classpath:static/json/hotels.json", "hotel");
     }
 
     private void loadData(String path, String entity) throws Exception {

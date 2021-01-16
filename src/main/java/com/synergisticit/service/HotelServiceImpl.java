@@ -25,6 +25,6 @@ public class HotelServiceImpl implements HotelService {
 
     @Override
     public List<Hotel> findBySearch(String hotelName, String city, String state, String address) {
-        return repo.findAllByHotelNameContainsOrCityContainsOrCityContainsOrAddressContains(hotelName, city, state, address);
+        return repo.findAllByHotelNameContainsOrCityContainsOrStateContainsOrAddressContains(hotelName, city, state, address);
     }
 }

@@ -6,7 +6,7 @@
     "city" : "Lanai City",
     "state" : "Hawaii",
     "starRating" : "5",
-    "averagePrice" : "1100.0",
+    "averagePrice" : "770.0",
     "amenities" : [
       {
         "a_id" : "1",
@@ -21,7 +21,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel01.jpg",
     "timesBooked" : "5"
   },
   {
@@ -46,7 +46,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel02.jpg",
     "timesBooked" : "5"
   },
   {
@@ -75,17 +75,17 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel03.jpg",
     "timesBooked" : "5"
   },
   {
-    "hotelId" : "5",
+    "hotelId" : "4",
     "hotelName" : "DoubleTree",
     "address" : "1985 E Grand Ave, El Segundo, CA 90245",
     "city" : "Los Angeles - LA",
     "state" : "California",
     "starRating" : "5",
-    "averagePrice" : "145.0",
+    "averagePrice" : "445.0",
     "amenities" : [
       {
         "a_id" : "1",
@@ -104,7 +104,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel04.jpg",
     "timesBooked" : "5"
   },
   {
@@ -133,7 +133,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel05.jpg",
     "timesBooked" : "5"
   },
   {
@@ -162,7 +162,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel06.jpg",
     "timesBooked" : "5"
   },
   {
@@ -191,7 +191,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel07.jpg",
     "timesBooked" : "5"
   },
   {
@@ -220,7 +220,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel08.jpg",
     "timesBooked" : "5"
   },
   {
@@ -253,7 +253,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel09.jpg",
     "timesBooked" : "5"
   },
   {
@@ -290,7 +290,7 @@
     "description" : "",
     "email" : "",
     "mobile" : "123456789",
-    "imageURL" : "",
+    "imageURL" : "/img/hotel10.jpg",
     "timesBooked" : "5"
   }
 ]
