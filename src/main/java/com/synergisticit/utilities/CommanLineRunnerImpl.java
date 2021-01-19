@@ -5,8 +5,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.synergisticit.domain.Amenities;
 import com.synergisticit.domain.Hotel;
+import com.synergisticit.domain.RoomType;
 import com.synergisticit.service.AmenitiesService;
 import com.synergisticit.service.HotelService;
+import com.synergisticit.service.RoomTypeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.Resource;
@@ -27,18 +29,22 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
     private final ResourceLoader resourceLoader;
     private final HotelService hotelService;
     private final AmenitiesService amenitiesService;
+    private final RoomTypeService roomTypeService;
 
     public CommanLineRunnerImpl(ResourceLoader resourceLoader,
                                 HotelService hotelService,
-                                AmenitiesService amenitiesService) {
+                                AmenitiesService amenitiesService,
+                                RoomTypeService roomTypeService) {
         this.resourceLoader = resourceLoader;
         this.hotelService = hotelService;
         this.amenitiesService = amenitiesService;
+        this.roomTypeService = roomTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
 
+        loadData("classpath:static/json/roomtype.json", "roomtype");
         loadData("classpath:static/json/amenities.json", "amenities");
         loadData("classpath:static/json/hotels.json", "hotel");
     }
@@ -57,25 +63,32 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
             Type listType = null;
 
             switch (entity) {
-                case "hotel":
+                case "roomtype":
                     gson = new Gson();
-                    listType = new TypeToken<List<Hotel>>() {
-                    }.getType();
-                    List<Hotel> hotels = gson.fromJson(data, listType);
+                    listType = new TypeToken<List<RoomType>>() {}.getType();
+                    List<RoomType> roomTypes = gson.fromJson(data, listType);
 
-                    for (Hotel h : hotels) {
-                        hotelService.save(h);
-                    }
+                    for (RoomType rt : roomTypes)
+                        roomTypeService.save(rt);
                     break;
 
                 case "amenities":
                     gson = new Gson();
-                    listType = new TypeToken<List<Amenities>>() {
-                    }.getType();
+                    listType = new TypeToken<List<Amenities>>() {}.getType();
                     List<Amenities> amenities = gson.fromJson(data, listType);
 
                     for (Amenities a : amenities) {
                         amenitiesService.save(a);
+                    }
+                    break;
+
+                case "hotel":
+                    gson = new Gson();
+                    listType = new TypeToken<List<Hotel>>() {}.getType();
+                    List<Hotel> hotels = gson.fromJson(data, listType);
+
+                    for (Hotel h : hotels) {
+                        hotelService.save(h);
                     }
                     break;
             }

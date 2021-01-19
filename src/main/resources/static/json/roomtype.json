@@ -1,0 +1,18 @@
+[
+  {
+    "typeId" : "1",
+    "name" : "standard"
+  },
+  {
+    "typeId" : "2",
+    "name" : "double"
+  },
+  {
+    "typeId" : "3",
+    "name" : "studio"
+  },
+  {
+    "typeId" : "4",
+    "name" : "executive"
+  }
+]
