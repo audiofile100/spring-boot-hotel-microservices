@@ -18,10 +18,16 @@ public class HotelController {
         this.hotelService = hotelService;
     }
 
-    @PostMapping(value = "/api/hotel", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "api/hotel", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> saveHotel(@RequestBody Hotel hotel) {
 
         return new ResponseEntity<>(hotelService.save(hotel), HttpStatus.CREATED);
+    }
+
+    @GetMapping(value = "api/hotel/{id}")
+    public ResponseEntity<?> findHotelById(@PathVariable int id) {
+
+        return new ResponseEntity<>(hotelService.findById(id), HttpStatus.OK);
     }
 
     @GetMapping(value = "api/hotel", produces = MediaType.APPLICATION_JSON_VALUE)

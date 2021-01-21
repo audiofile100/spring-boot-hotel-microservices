@@ -8,6 +8,7 @@ public interface HotelService {
 
     Hotel save(Hotel hotel);
 
+    Hotel findById(int hotelId);
     List<Hotel> findAll();
     List<Hotel> findBySearch(String hotelName, String city, String state, String address);
 }
