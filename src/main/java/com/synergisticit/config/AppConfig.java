@@ -12,8 +12,12 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
 
 import javax.sql.DataSource;
+import java.util.Objects;
 import java.util.Properties;
 
 @Slf4j
@@ -23,7 +27,7 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = {"com.synergisticit.repository"})
 public class AppConfig {
 
-    private Environment env;
+    private final Environment env;
 
     @Autowired
     public AppConfig(Environment env) {
@@ -32,11 +36,10 @@ public class AppConfig {
 
     @Bean
     public DataSource dataSource() {
-        log.debug("AppConfig.dataSource()......");
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUrl(env.getProperty("url"));
-        dataSource.setDriverClassName(env.getProperty("driver"));
+        dataSource.setDriverClassName(Objects.requireNonNull(env.getProperty("driver")));
         dataSource.setUsername(env.getProperty("dbUsername"));
         dataSource.setPassword(env.getProperty("dbPassword"));
 
@@ -45,7 +48,6 @@ public class AppConfig {
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-        log.debug("AppConfig.entityManagerFactory()......");
 
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactory.setDataSource(dataSource());
@@ -68,7 +70,6 @@ public class AppConfig {
 
     @Bean
     public JpaTransactionManager transactionManager() {
-        log.debug("AppConfig.transactionManager()......");
 
         JpaTransactionManager jpaTransactionManager = new JpaTransactionManager();
         jpaTransactionManager.setDataSource(dataSource());
@@ -76,4 +77,14 @@ public class AppConfig {
         return jpaTransactionManager;
     }
 
+    @Bean
+    public ViewResolver viewResolver() {
+
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setSuffix(".jsp");
+        viewResolver.setViewClass(JstlView.class);
+
+        return viewResolver;
+    }
 }

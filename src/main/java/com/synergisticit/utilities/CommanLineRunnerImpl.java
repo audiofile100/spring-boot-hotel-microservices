@@ -6,9 +6,11 @@ import com.google.gson.reflect.TypeToken;
 import com.synergisticit.domain.Amenities;
 import com.synergisticit.domain.Hotel;
 import com.synergisticit.domain.RoomType;
+import com.synergisticit.domain.User;
 import com.synergisticit.service.AmenitiesService;
 import com.synergisticit.service.HotelService;
 import com.synergisticit.service.RoomTypeService;
+import com.synergisticit.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.Resource;
@@ -30,20 +32,24 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
     private final HotelService hotelService;
     private final AmenitiesService amenitiesService;
     private final RoomTypeService roomTypeService;
+    private final UserService userService;
 
     public CommanLineRunnerImpl(ResourceLoader resourceLoader,
                                 HotelService hotelService,
                                 AmenitiesService amenitiesService,
-                                RoomTypeService roomTypeService) {
+                                RoomTypeService roomTypeService,
+                                UserService userService) {
         this.resourceLoader = resourceLoader;
         this.hotelService = hotelService;
         this.amenitiesService = amenitiesService;
         this.roomTypeService = roomTypeService;
+        this.userService = userService;
     }
 
     @Override
     public void run(String... args) throws Exception {
 
+        loadData("classpath:static/json/users.json", "users");
         loadData("classpath:static/json/roomtype.json", "roomtype");
         loadData("classpath:static/json/amenities.json", "amenities");
         loadData("classpath:static/json/hotels.json", "hotel");
@@ -63,6 +69,15 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
             Type listType = null;
 
             switch (entity) {
+                case "users":
+                    gson = new Gson();
+                    listType = new TypeToken<List<User>>() {}.getType();
+                    List<User> users = gson.fromJson(data, listType);
+
+                    for (User u : users)
+                        userService.save(u);
+                    break;
+
                 case "roomtype":
                     gson = new Gson();
                     listType = new TypeToken<List<RoomType>>() {}.getType();
