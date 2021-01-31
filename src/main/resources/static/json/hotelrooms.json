@@ -1,0 +1,66 @@
+[
+  {
+    "hotelRoomId" : "1",
+    "type" : {
+      "typeId" : "1",
+      "name" : "standard"
+    },
+    "amenities" : [],
+    "noRooms" : "0",
+    "price" : "0",
+    "discount" : "0",
+    "description" : "",
+    "policies" : "",
+    "hotelName" : "",
+    "roomType" : "",
+    "hotelRoomAmenityNames" : []
+  },
+  {
+    "hotelRoomId" : "2",
+    "type" : {
+      "typeId" : "2",
+      "name" : "double"
+    },
+    "amenities" : [],
+    "noRooms" : "0",
+    "price" : "0",
+    "discount" : "0",
+    "description" : "",
+    "policies" : "",
+    "hotelName" : "",
+    "roomType" : "",
+    "hotelRoomAmenityNames" : []
+  },
+  {
+    "hotelRoomId" : "3",
+    "type" : {
+      "typeId" : "3",
+      "name" : "studio"
+    },
+    "amenities" : [],
+    "noRooms" : "0",
+    "price" : "0",
+    "discount" : "0",
+    "description" : "",
+    "policies" : "",
+    "hotelName" : "",
+    "roomType" : "",
+    "hotelRoomAmenityNames" : []
+  },
+  {
+    "hotelRoomId" : "4",
+    "type" : {
+      "typeId" : "4",
+      "name" : "executive"
+    },
+    "amenities" : [],
+    "noRooms" : "0",
+    "price" : "0",
+    "discount" : "0",
+    "description" : "",
+    "policies" : "",
+    "hotelName" : "",
+    "roomType" : "",
+    "hotelRoomAmenityNames" : []
+  }
+]

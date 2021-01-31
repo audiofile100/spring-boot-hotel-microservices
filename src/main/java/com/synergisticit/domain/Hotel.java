@@ -1,5 +1,8 @@
 package com.synergisticit.domain;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,8 +33,9 @@ public class Hotel {
 	private String mobile;
 	private String imageURL;	
 	private int timesBooked;
-	
+
 	@OneToMany
+	@Cascade(CascadeType.ALL)
 	private Set<HotelRoom> hotelRooms = new HashSet<>();
 	
 	@Transient

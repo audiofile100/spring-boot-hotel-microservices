@@ -4,17 +4,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 @Entity
 @Table(name="hotel_rooms")
 public class HotelRoom {		
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int hotelRoomId; //PK	
 	@ManyToOne
 	private RoomType type;
@@ -102,6 +98,4 @@ public class HotelRoom {
 	public void setPolicies(String policies) {
 		this.policies = policies;
 	}
-	
-	
 }

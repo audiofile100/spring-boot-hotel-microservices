@@ -22,7 +22,57 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel01.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "1",
+        "type" : {
+          "typeId" : "1",
+          "name" : "standard"
+        },
+        "amenities" : [],
+        "noRooms" : "10",
+        "price" : "200",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "2",
+        "type" : {
+          "typeId" : "2",
+          "name" : "double"
+        },
+        "amenities" : [],
+        "noRooms" : "9",
+        "price" : "300",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "3",
+        "type" : {
+          "typeId" : "4",
+          "name" : "executive"
+        },
+        "amenities" : [],
+        "noRooms" : "4",
+        "price" : "900",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "2",
@@ -47,7 +97,41 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel02.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "4",
+        "type" : {
+          "typeId" : "1",
+          "name" : "standard"
+        },
+        "amenities" : [],
+        "noRooms" : "5",
+        "price" : "250",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "5",
+        "type" : {
+          "typeId" : "4",
+          "name" : "executive"
+        },
+        "amenities" : [],
+        "noRooms" : "2",
+        "price" : "560",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "3",
@@ -76,7 +160,41 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel03.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "6",
+        "type" : {
+          "typeId" : "2",
+          "name" : "double"
+        },
+        "amenities" : [],
+        "noRooms" : "4",
+        "price" : "132",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "7",
+        "type" : {
+          "typeId" : "3",
+          "name" : "studio"
+        },
+        "amenities" : [],
+        "noRooms" : "2",
+        "price" : "188",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "4",
@@ -105,7 +223,41 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel04.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "8",
+        "type" : {
+          "typeId" : "2",
+          "name" : "double"
+        },
+        "amenities" : [],
+        "noRooms" : "12",
+        "price" : "399",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "9",
+        "type" : {
+          "typeId" : "4",
+          "name" : "executive"
+        },
+        "amenities" : [],
+        "noRooms" : "1",
+        "price" : "652",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "5",
@@ -134,7 +286,41 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel05.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "10",
+        "type" : {
+          "typeId" : "1",
+          "name" : "standard"
+        },
+        "amenities" : [],
+        "noRooms" : "8",
+        "price" : "120",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "11",
+        "type" : {
+          "typeId" : "2",
+          "name" : "double"
+        },
+        "amenities" : [],
+        "noRooms" : "5",
+        "price" : "132",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "6",
@@ -163,7 +349,41 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel06.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "12",
+        "type" : {
+          "typeId" : "1",
+          "name" : "standard"
+        },
+        "amenities" : [],
+        "noRooms" : "11",
+        "price" : "70",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      },
+      {
+        "hotelRoomId" : "13",
+        "type" : {
+          "typeId" : "2",
+          "name" : "double"
+        },
+        "amenities" : [],
+        "noRooms" : "10",
+        "price" : "90",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "7",
@@ -192,7 +412,25 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel07.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "14",
+        "type" : {
+          "typeId" : "1",
+          "name" : "standard"
+        },
+        "amenities" : [],
+        "noRooms" : "9",
+        "price" : "82",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "8",
@@ -221,7 +459,25 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel08.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "15",
+        "type" : {
+          "typeId" : "3",
+          "name" : "studio"
+        },
+        "amenities" : [],
+        "noRooms" : "7",
+        "price" : "110",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "9",
@@ -254,7 +510,25 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel09.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "16",
+        "type" : {
+          "typeId" : "2",
+          "name" : "double"
+        },
+        "amenities" : [],
+        "noRooms" : "7",
+        "price" : "77",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   },
   {
     "hotelId" : "10",
@@ -291,6 +565,24 @@
     "email" : "",
     "mobile" : "123456789",
     "imageURL" : "/img/hotel10.jpg",
-    "timesBooked" : "5"
+    "timesBooked" : "5",
+    "hotelRooms" : [
+      {
+        "hotelRoomId" : "17",
+        "type" : {
+          "typeId" : "1",
+          "name" : "standard"
+        },
+        "amenities" : [],
+        "noRooms" : "9",
+        "price" : "99",
+        "discount" : "0",
+        "description" : "",
+        "policies" : "",
+        "hotelName" : "",
+        "roomType" : "",
+        "hotelRoomAmenityNames" : []
+      }
+    ]
   }
 ]
