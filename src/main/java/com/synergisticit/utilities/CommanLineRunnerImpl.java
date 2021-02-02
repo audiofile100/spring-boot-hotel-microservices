@@ -5,8 +5,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.synergisticit.domain.Amenities;
 import com.synergisticit.domain.Hotel;
+import com.synergisticit.domain.HotelReview;
 import com.synergisticit.domain.RoomType;
 import com.synergisticit.service.AmenitiesService;
+import com.synergisticit.service.HotelReviewService;
 import com.synergisticit.service.HotelService;
 import com.synergisticit.service.RoomTypeService;
 import lombok.extern.slf4j.Slf4j;
@@ -30,15 +32,17 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
     private final HotelService hotelService;
     private final AmenitiesService amenitiesService;
     private final RoomTypeService roomTypeService;
+    private final HotelReviewService hotelReviewService;
 
     public CommanLineRunnerImpl(ResourceLoader resourceLoader,
                                 HotelService hotelService,
                                 AmenitiesService amenitiesService,
-                                RoomTypeService roomTypeService) {
+                                RoomTypeService roomTypeService, HotelReviewService hotelReviewService) {
         this.resourceLoader = resourceLoader;
         this.hotelService = hotelService;
         this.amenitiesService = amenitiesService;
         this.roomTypeService = roomTypeService;
+        this.hotelReviewService = hotelReviewService;
     }
 
     @Override
@@ -47,6 +51,7 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
         loadData("classpath:static/json/roomtype.json", "roomtype");
         loadData("classpath:static/json/amenities.json", "amenities");
         loadData("classpath:static/json/hotels.json", "hotel");
+        loadData("classpath:static/json/hotelreviews.json", "hotelreviews");
     }
 
     private void loadData(String path, String entity) throws Exception {
@@ -89,6 +94,16 @@ public class CommanLineRunnerImpl implements CommandLineRunner {
 
                     for (Hotel h : hotels) {
                         hotelService.save(h);
+                    }
+                    break;
+
+                case "hotelreviews":
+                    gson = new Gson();
+                    listType = new TypeToken<List<HotelReview>>() {}.getType();
+                    List<HotelReview> hotelReviews = gson.fromJson(data, listType);
+
+                    for (HotelReview hr : hotelReviews) {
+                        hotelReviewService.save(hr);
                     }
                     break;
             }

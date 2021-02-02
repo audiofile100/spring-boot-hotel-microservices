@@ -1,0 +1,58 @@
+[
+  {
+    "reviewId" : "1",
+    "cid" : "2",
+    "bookingId" : "4",
+    "hotelId" : "10",
+    "cleanliness" : "4",
+    "service" : "4",
+    "property" : "5",
+    "amenities" : "5",
+    "atmosphere" : "5",
+    "overall" : "4.6",
+    "comments" : "The staff was friendly and nice. The room was very clean.",
+    "displayName" : "Alice W."
+  },
+  {
+    "reviewId" : "2",
+    "cid" : "2",
+    "bookingId" : "5",
+    "hotelId" : "3",
+    "cleanliness" : "3",
+    "service" : "4",
+    "property" : "3",
+    "amenities" : "5",
+    "atmosphere" : "5",
+    "overall" : "4",
+    "comments" : "The room was very clean. The location is good. Everything was within walking distance.",
+    "displayName" : "Alex S."
+  },
+  {
+    "reviewId" : "3",
+    "cid" : "1",
+    "bookingId" : null,
+    "hotelId" : "10",
+    "cleanliness" : "3",
+    "service" : "4",
+    "property" : "3",
+    "amenities" : "5",
+    "atmosphere" : "5",
+    "overall" : "4",
+    "comments" : "The staff was friendly and nice and we enjoyed our stay.",
+    "displayName" : "Ashley"
+  },
+  {
+    "reviewId" : "4",
+    "cid" : "1",
+    "bookingId" : null,
+    "hotelId" : "10",
+    "cleanliness" : "3",
+    "service" : "4",
+    "property" : "3",
+    "amenities" : "5",
+    "atmosphere" : "5",
+    "overall" : "4",
+    "comments" : "The room was very clean. The location is good. Everything was within walking distance.",
+    "displayName" : "Cathy R."
+  }
+]

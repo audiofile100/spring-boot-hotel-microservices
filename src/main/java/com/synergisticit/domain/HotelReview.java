@@ -22,6 +22,8 @@ public class HotelReview {
     private int property;
     private int amenities;
     private int atmosphere;
+    private double overall;
 
     private String comments;
+    private String displayName;
 }

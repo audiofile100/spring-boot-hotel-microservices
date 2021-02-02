@@ -19,9 +19,4 @@ public class RoomTypeServiceImpl implements RoomTypeService {
     public RoomType save(RoomType roomType) {
         return repo.save(roomType);
     }
-
-    @Override
-    public List<RoomType> findAll() {
-        return repo.findAll();
-    }
 }
